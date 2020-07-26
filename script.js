@@ -191,7 +191,7 @@ function game(){
         gameAnswer.style.color = 'yellow';
     }
     else{
-        gameAnswer.innerHTML = 'Поздравляем вы отгодали загаданное число'
+        gameAnswer.innerHTML = 'Поздравляем вы отгадали загаданное число'
         gameAnswer.style.color = '#6ab04c';
         gameBtn.style.display = 'none';
         resetBtn.style.display = 'inline-block';
