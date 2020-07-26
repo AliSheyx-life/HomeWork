@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Olds</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="home">
+            <a class="home__link" href="index.html">На главную</a>
+        </div>
+        
+        <div class="olds">
+            
+            <h1 class="sections__title">Olds</h1>
+            <p class="sections__subtitle">Введите ваш возраст и я скажу ваш стаж работы</p>
+            
+            <input 
+            type="number" 
+            class="olds__input" 
+            id="oldsInput" 
+            placeholder="Ваш возраст">
+            
+            <button class="olds__btn" id="oldsBtn" onclick="olds()">Узнать</button>
+            
+            <div class="olds__answer-box">
+                <p class="olds__answer" id="oldsAnswer">Ответ:</p>
+            </div>
+            
+            <div class="img-box">
+                <div class="olds__img1 olds__img" id="oldsImg1"></div>
+                <div class="olds__img2 olds__img" id="oldsImg2"></div>
+                <div class="olds__img3 olds__img" id="oldsImg3"></div>
+                <div class="olds__img4 olds__img" id="oldsImg4"></div>
+                <div class="olds__img5 olds__img" id="oldsImg5"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

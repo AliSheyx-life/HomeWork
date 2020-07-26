@@ -1,0 +1,342 @@
+::selection{
+    background: #6ab04c;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background: #2c3a47;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,  #6ab04c);
+    border-radius: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background: #2c3a47;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home__link{
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.home__link:hover{
+    color: #6ab04c;
+}
+
+button:focus,
+input:focus{
+    outline: none;
+}
+
+/* INDEX start */
+
+.block{
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left .sm{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.effect-text{
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.effect-text:hover{
+    color: #6ab04c;
+}
+
+.sm .effect{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    width: 50px;
+    height: 50px;
+    line-height: 100px;
+    text-align: center;
+    color: #6ab04c;
+    margin: 15px;
+    position: relative;
+    transition: 0.4s linear;
+}
+
+.sm .effect::before,
+.sm .effect::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    top: 25px;
+    left: 0;
+    transition: 0.4s linear;
+}
+
+.sm a:hover .effect{
+    transform: scale(.8);
+}
+
+.sm a:hover .effect:before{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(20deg);
+}
+
+.sm a:hover .effect:after{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewY(-20deg);
+}
+
+.right{
+    margin-top: 50px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.text-block{
+    width: 570px;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+
+.text-block .right__title{
+    font-size: 40px;
+    color: #6ab04c;
+    margin-bottom: 30px;
+}
+
+.text-block p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+/* INDEX end */
+
+/* ----------- */
+
+/* WEEKS start */
+
+.mini-game,
+.olds,
+.weeks,
+.numbers{
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.sections__title{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #6ab04c;
+    margin-bottom: 30px;
+}
+
+.sections__subtitle{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.weeks__list{
+    margin: 0 auto 20px;
+    width: 115px;
+    text-align: left;
+}
+
+.weeks__items{
+    font-size: 15px;
+    color: #f1f1f1;
+    line-height: 24px;
+}
+
+.game__input,
+.olds__input,
+.numbers__input,
+.weeks__input{
+    background: none;
+    border: #f1f1f1 1px solid;
+    border-radius: 5px;
+    width: 160px;
+    padding: 10px;
+    color: #6ab04c;
+    font-weight: 900;
+}
+
+.game__input::placeholder,
+.olds__input::placeholder,
+.numbers__input::placeholder,
+.weeks__input::placeholder{
+    color: #f1f1f1;
+    font-weight: 300;
+}
+
+.game__input:focus,
+.olds__input:focus,
+.numbers__input:focus,
+.weeks__input:focus{
+    border: 1px solid #6ab04c;
+}
+
+.game__btn,
+.olds__btn,
+.numbers__btn,
+.weeks__btn{
+    width: 80px;
+    padding: 12px 10px 11px;
+    background: none;
+    border: #6ab04c 1px solid;
+    border-radius: 5px;
+    color: #6ab04c;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.game__btn:hover,
+.olds__btn:hover,
+.numbers__btn:hover,
+.weeks__btn:hover{
+    background: #6ab04c;
+    color: #fff;
+    border: #fff 1px solid;
+}
+
+.game__answer-box,
+.olds__answer-box,
+.numbers__answer-box,
+.weeks__answer-box{
+    margin-top: 30px;
+}
+
+.game__answer,
+.olds__answer,
+.numbers__answer,
+.weeks__answer{
+    font-size: 30px;
+    color: #fff;
+    padding: 15px;
+    border: #6ab04c 1px solid;
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+/* WEEKS end */
+/* ----------*/
+
+
+/* Numbers */
+.numbers__btn{
+    margin: 25px auto 0;
+    display: block;
+}
+
+.numbers__input{
+    margin-bottom: 5px;
+}
+/* Numbers end */
+/* ----------*/
+
+/* Olds */
+.img-box{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.olds__img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.olds__img1{
+    background: url(images/baby.jpg) no-repeat center center;
+    background-size: cover; 
+}
+
+.olds__img2{
+    background: url(images/boys.jpg) no-repeat right center;
+    background-size: cover; 
+}
+
+.olds__img3{
+    background: url(images/work.jpg) no-repeat center center;
+    background-size: cover; 
+}
+
+.olds__img4{
+    background: url(images/old.jpg) no-repeat center center;
+    background-size: cover; 
+}
+
+.olds__img5{
+    background: url(images/skelet.jpg) no-repeat center center;
+    background-size: cover; 
+}
+
+.olds__img1,
+.olds__img2,
+.olds__img3,
+.olds__img4,
+.olds__img5{
+    opacity: 0;
+    transition: 0.7s linear;
+}
+
+/* Mini Game */
+
+.game__btn{
+    display: inline-block;
+}
+
+.reset{
+    border: 1px solid yellow;
+    color: yellow;
+    display: none;
+}
+
+.reset:hover{
+    border: 1px solid #333;
+    color: #333;
+    background: yellow;
+}

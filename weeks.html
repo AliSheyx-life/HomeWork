@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Weeks</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="home">
+            <a class="home__link" href="index.html">На главную</a>
+        </div>
+
+        <div class="numbers">
+            <h1 class="sections__title">Weeks</h1>
+            <p class="sections__subtitle">Введите цифру недели и узнайте её перевод на Английском</p>
+
+            <ul class="weeks__list">
+                <li class="weeks__items">1 - Понедельник</li>
+                <li class="weeks__items">2 - Вторник</li>
+                <li class="weeks__items">3 - Среда</li>
+                <li class="weeks__items">4 - Четверг</li>
+                <li class="weeks__items">5 - Пятница</li>
+                <li class="weeks__items">6 - Суббота</li>
+                <li class="weeks__items">7 - Воскресенье</li>
+            </ul>
+
+            <input 
+            type="text" 
+            class="weeks__input" 
+            id="weeksInput" 
+            placeholder="Введите цифру от 1-7"
+            maxlength="1">
+
+            <button class="weeks__btn" id="weeksBtn" onclick="weeks()">Узнать</button>
+
+            <div class="weeks__answer-box">
+                <p class="weeks__answer" id="weeksAnswer">Ответ:</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
