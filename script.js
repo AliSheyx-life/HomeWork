@@ -23,7 +23,7 @@ function weeks() {
         weeksAnswer.style.color = 'yellow';
     } else if (weeksInput == 5) {
         weeksAnswer.innerHTML = 'Friday';
-        weeksAnswer.style.color = '#6ab04c';
+        weeksAnswer.style.color = 'yellow';
     } else if (weeksInput == 6 ) {
         weeksAnswer.innerHTML = 'Saturday';
         weeksAnswer.style.color = 'yellow';
